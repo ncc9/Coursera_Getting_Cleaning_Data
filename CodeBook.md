@@ -1,10 +1,10 @@
-## Code Book
+### Code Book
 
-For the provided UCI HAR Dataset the following vars are set from run_analysis.R.  See the [README](README.md) for additional details.
+For the provided UCI HAR Dataset the following vars are set from run_analysis.R.
 
-### Tidy Mean
+### Table "Tidy Mean""
 
-A data.table named `tidy.mean` is set with the following columns.  All units are maintained from the original data set. A file named tidy.mean.txt is written from run_analysis.R.
+A table named `tidy.mean` is set with the following columns.  All units are maintained from the original data set. A file named tidy.mean.txt is written from run_analysis.R.
 
 | column       | description                                              | type    |
 | ------------ | -------------------------------------------------------- | ------- |
@@ -12,9 +12,9 @@ A data.table named `tidy.mean` is set with the following columns.  All units are
 | Activity     | Label of the activity                                    | factor  |
 | MeanSamples  | Mean of variables by Subject + Activity provided in tidy | numeric |
 
-### Tidy
+### Table "Tidy"
 
-A data.table named `tidy` is set with the following columns.  All units are maintained from the original data set. A file named tidy.txt is written from run_analysis.R.
+A table named `tidy` is set with the following columns.  All units are maintained from the original data set. A file named tidy.txt is written from run_analysis.R.
 
 | Column                       | Original Name               |
 | ---------------------------- | --------------------------- |
@@ -86,7 +86,3 @@ A data.table named `tidy` is set with the following columns.  All units are main
 | FFT.BodyBodyGyroMag.Std      | fBodyBodyGyroMag-std()      |
 | FFT.BodyBodyGyroJerkMag.Mean | fBodyBodyGyroJerkMag-mean() |
 | FFT.BodyBodyGyroJerkMag.Std  | fBodyBodyGyroJerkMag-std()  |
-
-### Notes
-
-Source data is from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
