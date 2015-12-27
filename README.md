@@ -9,13 +9,13 @@ Source dataset https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUC
 *  Appropriately labels the data set with descriptive activity names.
 *  Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-## Notes
+### Notes
 
 *  Only vaiables containing mean() & std() are used.
 *  Requires the plyr & reshape2 packages.
 *  Assumes the dataset is unzipped in the current directory.
 
-Constructed using the following:
+### Version:
 
 ```R
 > version
@@ -35,13 +35,16 @@ version.string R version 3.0.1 (2013-05-16)
 nickname       Good Sport
 ```
 
-##  Running
+##  Outputs
 
 ```bash
 $ Rscript run_analysis.R
 ```
 
-Yields tidy.txt & tidy.mean.txt.
+file:
+- tidy.txt
+- tidy.mean.txt.
+
 =======
 Create one R script called run_analysis.R that does the following:
 - Merges the training and the test sets to create one data set.
