@@ -2,6 +2,7 @@
 
 Source dataset https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
 
+### To-Do
 Create one R script called run_analysis.R that does the following:
 *  Merges the training and the test sets to create one data set.
 *  Extracts only the measurements on the mean and standard deviation for each measurement.
@@ -10,13 +11,11 @@ Create one R script called run_analysis.R that does the following:
 *  Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ### Notes
-
 *  Only vaiables containing mean() & std() are used.
 *  Requires the plyr & reshape2 packages.
 *  Assumes the dataset is unzipped in the current directory.
 
-### Version:
-
+### R Version:
 ```R
 > version
 platform       x86_64-apple-darwin12.4.0
@@ -36,7 +35,6 @@ nickname       Good Sport
 ```
 
 ###  Outputs
-
 ```bash
 $ Rscript run_analysis.R
 ```
