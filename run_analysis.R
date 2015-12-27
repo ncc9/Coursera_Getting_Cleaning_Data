@@ -1,12 +1,6 @@
 library(plyr)
 library(reshape2)
 
-## 1. each variable should be in one column
-## 2. each observation of that variable should be in a diferent row
-## 3. include ids to link tables together
-
-## Merges the training and the test sets to create one data set.
-
 getwd()
 
 root.dir <- "UCI HAR Dataset"
