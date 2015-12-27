@@ -1,7 +1,6 @@
 library(plyr)
 library(reshape2)
 
-## Goals
 ## 1. each variable should be in one column
 ## 2. each observation of that variable should be in a diferent row
 ## 3. include ids to link tables together
