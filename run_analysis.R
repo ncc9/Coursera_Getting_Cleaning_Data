@@ -8,8 +8,11 @@ library(reshape2)
 
 ## Merges the training and the test sets to create one data set.
 
+getwd()
+
 root.dir <- "UCI HAR Dataset"
 data.set <- list()
+
 
 message("loading features.txt")
 data.set$features <- read.table(paste(root.dir, "features.txt", sep="/"), col.names=c('id', 'name'), stringsAsFactors=FALSE)
