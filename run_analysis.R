@@ -7,6 +7,10 @@
 
 rm(list = ls())
 
+getwd()
+setwd("./Cousera_Getting and Cleaning Data/data")
+
+
 if (!require("data.table")) {
   install.packages("data.table")
 }
@@ -18,9 +22,6 @@ if (!require("reshape2")) {
 require("data.table")
 require("reshape2")
 
-getwd()
-setwd("..")
-setwd("./01. R/Cousera_Getting and Cleaning Data/data")
 
 # Load: activity labels
 activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")[,2]
@@ -74,9 +75,8 @@ melt_data <- melt(data, id = id_labels, measure.vars = data_labels)
 # Apply mean function to dataset using dcast function
 tidy_data <- dcast(melt_data, subject + Activity_Label ~ variable, mean)
 
-getwd()
 setwd("..")
-setwd("./GitHub Repositories/Getting Cleaning Data")
+setwd("./Course Project")
 write.table(tidy_data, file = "./tidy_data.txt")
 
 
