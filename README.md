@@ -9,7 +9,7 @@ You should create one R script called run_analysis.R that does the following:
 - Appropriately labels the data set with descriptive activity names.
 - Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-# Notes:
+## Notes
 - Require data.table, reshape2 packages.
 
 Version:
