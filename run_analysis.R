@@ -41,9 +41,9 @@ names(X_test) <- features
 X_test <- X_test[,extract_features]
 
 # Load activity labels
-y_test[,2] = activity_labels[y_test[,1]]
-names(y_test) = c("Activity_ID", "Activity_Label")
-names(subject_test) = "subject"
+y_test[,2] <- activity_labels[y_test[,1]]
+names(y_test) <- c("Activity_ID", "Activity_Label")
+names(subject_test) <- "subject"
 
 # Bind data
 test_data <- cbind(as.data.table(subject_test), y_test, X_test)
