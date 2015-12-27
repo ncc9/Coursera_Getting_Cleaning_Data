@@ -5,6 +5,8 @@
 ## 4. Appropriately labels the data set with descriptive activity names.
 ## 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+rm(list = ls())
+
 if (!require("data.table")) {
   install.packages("data.table")
 }
@@ -71,9 +73,10 @@ melt_data <- melt(data, id = id_labels, measure.vars = data_labels)
 
 # Apply mean function to dataset using dcast function
 tidy_data <- dcast(melt_data, subject + Activity_Label ~ variable, mean)
-setwd("..")
+
 getwd()
-setwd("./12. Git/Getting Cleaning Data")
+setwd("..")
+setwd("./GitHub Repositories/Getting Cleaning Data")
 write.table(tidy_data, file = "./tidy_data.txt")
 
 
